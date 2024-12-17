@@ -2,17 +2,8 @@
 
 This repository contains a comprehensive pipeline for clustering protein sequences using various clustering algorithms. The pipeline includes data preprocessing, feature extraction, clustering, and evaluation of clustering performance.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Dataset](#dataset)
-- [Preprocessing](#preprocessing)
-- [Feature Extraction](#feature-extraction)
-- [Clustering Analysis](#clustering-analysis)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Overview
+![Clustering pipeline demo](Clustering_demo.gif)
 
 ## Introduction
 Protein sequence clustering is a crucial task in bioinformatics, enabling the identification of protein families and functional annotation. This pipeline leverages multiple clustering algorithms to provide robust and accurate clustering of protein sequences.
@@ -30,9 +21,9 @@ Protein sequence clustering is a crucial task in bioinformatics, enabling the id
 ## Feature Extraction
 - **Pseudo Amino Acid Composition (PAAC)**: Extracts features based on physicochemical properties of amino acids.
 - **Physicochemical Properties Considered**:
-  - Hydrophobicity
-  - Hydrophilicity
-  - Mass
+    - Hydrophobicity
+    - Hydrophilicity
+    - Mass
 
 ## Clustering Analysis
 Implements multiple clustering algorithms:
@@ -65,8 +56,16 @@ To run this pipeline, you need Python 3.8+ and the following packages:
 - pandas
 - scikit-learn
 - matplotlib
-- seaborn
 
-You can install the required packages using:
+## Usage
+1. **Clone the repository:**
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/RakeshBusi/Clustering.git
+```
+2. **Run the Jupyter Notebook:**
+```bash
+jupyter notebook Clustering_pipeline.ipynb
+```
+3. **Follow the steps in the notebook** to preprocess data, apply clustering algorithms, and evaluate results.
+
+4. **Sample Dataset** is present in the Lysozyme_CGCh folder, demonstrating the clustering pipeline using the Lysozyme CGCh dataset.
