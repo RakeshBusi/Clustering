@@ -3,7 +3,7 @@
 This repository contains a comprehensive pipeline for clustering protein sequences using various clustering algorithms. The pipeline includes data preprocessing, feature extraction, clustering, and evaluation of clustering performance.
 
 ## Overview
-![Clustering pipeline demo](Clustering_demo.gif)
+![Clustering pipeline demo](Images/Clustering_demo.gif)
 
 ## Introduction
 Protein sequence clustering is a crucial task in bioinformatics, enabling the identification of protein families and functional annotation. This pipeline leverages multiple clustering algorithms to provide robust and accurate clustering of protein sequences.
