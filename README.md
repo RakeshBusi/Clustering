@@ -31,7 +31,7 @@ Protein sequence clustering is a crucial task in bioinformatics, enabling the id
 
 ## Feature Extraction
 Feature extraction is crucial for clustering as it transforms raw protein sequences into numerical representations that capture essential biochemical properties, facilitating the differentiation and grouping of similar sequences.
-- **Pseudo Amino Acid Composition (PAAC)**: Extracts features based on physicochemical properties of amino acids.
+- **Pseudo Amino Acid Composition (PAAC)**: Extracts features based on composition and sequence order correlations. The sequence order correlations are calculated based on physicochemical properties of amino acids.
 - **Physicochemical Properties Considered**:
     - Hydrophobicity
     - Hydrophilicity
