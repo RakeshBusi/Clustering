@@ -5,6 +5,13 @@ This repository contains a comprehensive pipeline for clustering protein sequenc
 ## Overview
 ![Clustering pipeline demo](Images/Clustering_demo_trim.gif)
 
+
+## Glossary
+- **PAAC**: Pseudo Amino Acid Composition
+- **k**: Number of clusters
+- **SC**: Silhouette Coefficient
+- **FMI**: Fowlkes-Mallows Index
+
 ## Introduction
 Protein sequence clustering is a crucial task in bioinformatics, enabling the identification of protein families and functional annotation. This pipeline leverages multiple clustering algorithms to provide robust and accurate clustering of protein sequences. Using this pipeline, users can cluster protein families based on their shared functions.
 
@@ -32,7 +39,7 @@ Feature extraction is crucial for clustering as it transforms raw protein sequen
 ## Clustering Analysis
 Implements multiple clustering algorithms:
 - **KMeans**: Partitions data into k clusters by minimizing the variance within each cluster.
-- **Agglomerative Clustering**: Hierarchical clustering method that builds nested clusters by merging them successively.
+- **Agglomerative Clustering**: Hierarchical clustering method that builds nested clusters by merging or splitting them successively.
 - **Gaussian Mixture**: Probabilistic model that assumes all data points are generated from a mixture of several Gaussian distributions.
 - **Spectral Clustering**: Uses the eigenvalues of a similarity matrix to perform dimensionality reduction before clustering in fewer dimensions.
 - **Affinity Propagation**: Clustering algorithm based on the concept of "message passing" between data points.
@@ -56,7 +63,7 @@ Implements multiple clustering algorithms:
 - **Contingency Matrix**: A table used to describe the performance of a classification model.
 
 ## Installation
-To run this pipeline, you need Python 3.8+.
+To run this pipeline, follow these steps:
 
 1. **Clone the repository:**
 ```bash
@@ -66,23 +73,20 @@ git clone https://github.com/RakeshBusi/Clustering.git
 ```bash
 cd Clustering
 ```
-3. **Install the required packages:**
+3. **Install the conda package**
+- It is highly recommended to use a [conda](https://www.anaconda.com/download/success) environment.
+4. **Create and activate new conda environment:**
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate clustering_env
 ```
-
-## Glossary
-- **PAAC**: Pseudo Amino Acid Composition
-- **k**: Number of clusters
-- **SC**: Silhouette Coefficient
-- **FMI**: Fowlkes-Mallows Index
-
+>**Note**: Conda environment name and required packages are present in environment.yml
 ## Usage
 
 1. **Run the Jupyter Notebook:**
 ```bash
 jupyter notebook Clustering_pipeline.ipynb
 ```
-1. **Follow the steps in the notebook** to preprocess data, apply clustering algorithms, and evaluate results.
+2. **Follow the steps in the notebook** to preprocess data, apply clustering algorithms, and evaluate results.
 
 2. **Sample Dataset** is present in the Lysozyme_CGCh folder, demonstrating the clustering pipeline using the Lysozyme CGCh dataset.
