@@ -32,7 +32,7 @@ Feature extraction is crucial for clustering as it transforms raw protein sequen
 ## Clustering Analysis
 Implements multiple clustering algorithms:
 - **KMeans**: Partitions data into k clusters by minimizing the variance within each cluster.
-- **Agglomerative Clustering**: Hierarchical clustering method that builds nested clusters by merging or splitting them successively.
+- **Agglomerative Clustering**: Hierarchical clustering method that builds nested clusters by merging them successively.
 - **Gaussian Mixture**: Probabilistic model that assumes all data points are generated from a mixture of several Gaussian distributions.
 - **Spectral Clustering**: Uses the eigenvalues of a similarity matrix to perform dimensionality reduction before clustering in fewer dimensions.
 - **Affinity Propagation**: Clustering algorithm based on the concept of "message passing" between data points.
