@@ -38,15 +38,15 @@ Feature extraction is crucial for clustering as it transforms raw protein sequen
     - Mass
 ## Clustering Analysis
 Implements multiple clustering algorithms:
-- **KMeans**: Partitions data into k clusters by minimizing the variance within each cluster.
+- **KMeans Clustering**: Partitions data into k clusters by minimizing the variance within each cluster.
 - **Agglomerative Clustering**: Hierarchical clustering method that builds nested clusters by merging or splitting them successively.
-- **Gaussian Mixture**: Probabilistic model that assumes all data points are generated from a mixture of several Gaussian distributions.
+- **Gaussian Mixture Model**: Probabilistic model that assumes all data points are generated from a mixture of several Gaussian distributions.
 - **Spectral Clustering**: Uses the eigenvalues of a similarity matrix to perform dimensionality reduction before clustering in fewer dimensions.
-- **Affinity Propagation**: Clustering algorithm based on the concept of "message passing" between data points.
-- **DBSCAN**: Density-based clustering algorithm that groups together points that are closely packed together.
-- **OPTICS**: Similar to DBSCAN but can identify clusters of varying densities.
-- **Mean-shift**: Clustering algorithm that seeks modes or high-density regions in the feature space.
-- **BIRCH**: Hierarchical clustering algorithm that builds a tree structure for clustering large datasets.
+- **Affinity Propagation Clustering**: Clustering algorithm based on the concept of "message passing" between data points.
+- **DBSCAN Clustering**: Density-based clustering algorithm that groups together points that are closely packed together.
+- **OPTICS Clustering**: Similar to DBSCAN but can identify clusters of varying densities.
+- **Mean-shift Clustering**: Clustering algorithm that seeks modes or high-density regions in the feature space.
+- **BIRCH Clustering**: Hierarchical clustering algorithm that builds a tree structure for clustering large datasets.
 
 
 ## Evaluation Metrics
@@ -90,3 +90,16 @@ jupyter notebook Clustering_pipeline.ipynb
 2. **Follow the steps in the notebook** to preprocess data, apply clustering algorithms, and evaluate results.
 
 2. **Sample Dataset** is present in the Lysozyme_CGCh folder, demonstrating the clustering pipeline using the Lysozyme CGCh dataset.
+
+## Citation
+If you use this pipeline in your research, please cite our paper:
+
+```
+@article{busi2024suitable,
+  title={How suitable are clustering methods for functional annotation of proteins?},
+  author={Busi, Rakesh and Machingal, Pranav and Hemachandra, Nandyala and Balaji, Petety V},
+  journal={bioRxiv},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
