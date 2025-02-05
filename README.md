@@ -22,8 +22,7 @@ Protein sequence clustering is a crucial task in bioinformatics, enabling the id
 > **Note:** Lysozyme CGCh was taken as an example to demonstrate the pipeline.
 
 ## Preprocessing
-- **Elimination of Non-standard Amino Acids**: Eliminates sequences containing non-standard amino acids (UZOBJX).
-- **Duplicate Removal**: Removes duplicate sequences within and between protein families based on accession number.
+- **Duplicate Removal**: Removes duplicate accession number between protein families and retains a single copy of duplicate accession numbers/sequences within each family.
 - **Non-standard Amino Acid Elimination**: Eliminates sequences containing non-standard amino acids (UZOBJX).
 - **Optional Outlier Removal**: Removes outliers based on sequence length.
 - **Optional Length Filtering**: Filters sequences below a specified length threshold.
